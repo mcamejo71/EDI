@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="ReadEDIPackage"
   DTS:PackageType="5"
-  DTS:VersionBuild="45"
-  DTS:VersionGUID="{1178BC77-C96C-414A-AFDC-C034207DB5F5}">
+  DTS:VersionBuild="46"
+  DTS:VersionGUID="{02797893-C404-45EA-8AD9-E38905CCFD53}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1316,7 +1316,1529 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task 1"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{43EE371A-88FF-4AE6-B307-47ABCFE2AA79}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task 1"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task 1\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task 1\Derived Column.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task 1\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task 1\Derived Column 1.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task 1\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Derived Column 2"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 2"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Derived Column 2.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Derived Column 2.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task 1\Derived Column 2.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Derived Column 2.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task 1\Derived Column 2.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Derived Column 3"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 3"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Derived Column 3.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Derived Column 3.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task 1\Derived Column 3.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Derived Column 3.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task 1\Derived Column 3.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Derived Column 3.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Derived Column 3.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Derived Column 3.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Derived Column 3.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Derived Column 4"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 4"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Derived Column 4.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Derived Column 4.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task 1\Derived Column 4.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Derived Column 4.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task 1\Derived Column 4.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Derived Column 4.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Derived Column 4.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Derived Column 4.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Derived Column 4.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\XML Source"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Extracts data from an XML file. For example, extract catalog data from an XML file that represents catalogs and catalog items. Before using, specify the schema and generate an output for each XML element.;Microsoft Corporation;Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Extracts data from an XML file. For example, extract catalog data from an XML file that represents catalogs and catalog items. Before using, specify the schema and generate an output for each XML element."
+              name="XML Source"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.XmlSourceAdapter</property>
+                <property
+                  dataType="System.String"
+                  description="The XML data used by the XML source adapter."
+                  expressionType="Notify"
+                  name="XMLData">C:\tmp\test\ST_1.xml</property>
+                <property
+                  dataType="System.String"
+                  description="The variable used by the XML source adapter to specify XML data."
+                  name="XMLDataVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Defines how the XML source adapter gets XML data."
+                  name="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The XML schema definition used by the XML source adapter."
+                  expressionType="Notify"
+                  name="XMLSchemaDefinition">C:\tmp\test\ST_1.xsd</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Identifies whether or not to use inline schema."
+                  name="UseInlineSchema">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Defines how XML integer types are mapped."
+                  name="XMLIntegerMapping"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.XmlSourceAdapter+XMLIntegerMappingConverter">0</property>
+              </properties>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\XML Source.Outputs[BPR]"
+                  name="BPR">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">BPR</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR01]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR01]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR01]"
+                      name="BPR01"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR02]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR02]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR02]"
+                      name="BPR02"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR03]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR03]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR03]"
+                      name="BPR03"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR04]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR04]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR04]"
+                      name="BPR04"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR05]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR05]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR05]"
+                      name="BPR05"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR06]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR06]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR06]"
+                      name="BPR06"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR07]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR07]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR07]"
+                      name="BPR07"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR08]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR08]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR08]"
+                      name="BPR08"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR09]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR09]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR09]"
+                      name="BPR09"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR10]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR10]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR10]"
+                      name="BPR10"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR11]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR11]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR11]"
+                      name="BPR11"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR12]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR12]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR12]"
+                      name="BPR12"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR13]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR13]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR13]"
+                      name="BPR13"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR14]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR14]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR14]"
+                      name="BPR14"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR15]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR15]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR15]"
+                      name="BPR15"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR16]"
+                      dataType="ui4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR16]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[BPR16]"
+                      name="BPR16"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[ST_Id]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[ST_Id]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR].Columns[ST_Id]"
+                      name="ST_Id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR01]"
+                      dataType="wstr"
+                      length="255"
+                      name="BPR01">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR02]"
+                      dataType="ui1"
+                      name="BPR02">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.Byte</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR03]"
+                      dataType="wstr"
+                      length="255"
+                      name="BPR03">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR04]"
+                      dataType="wstr"
+                      length="255"
+                      name="BPR04">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR05]"
+                      dataType="wstr"
+                      length="255"
+                      name="BPR05">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR06]"
+                      dataType="wstr"
+                      length="255"
+                      name="BPR06">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR07]"
+                      dataType="wstr"
+                      length="255"
+                      name="BPR07">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR08]"
+                      dataType="wstr"
+                      length="255"
+                      name="BPR08">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR09]"
+                      dataType="wstr"
+                      length="255"
+                      name="BPR09">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR10]"
+                      dataType="wstr"
+                      length="255"
+                      name="BPR10">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR11]"
+                      dataType="wstr"
+                      length="255"
+                      name="BPR11">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR12]"
+                      dataType="wstr"
+                      length="255"
+                      name="BPR12">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR13]"
+                      dataType="wstr"
+                      length="255"
+                      name="BPR13">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR14]"
+                      dataType="wstr"
+                      length="255"
+                      name="BPR14">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR15]"
+                      dataType="wstr"
+                      length="255"
+                      name="BPR15">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[BPR16]"
+                      dataType="ui4"
+                      name="BPR16">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt32</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR].ExternalColumns[ST_Id]"
+                      dataType="ui8"
+                      name="ST_Id">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt64</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output]"
+                  isErrorOut="true"
+                  name="BPR Error Output">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">BPR</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR01]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR01]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR01]"
+                      name="BPR01" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR02]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR02]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR02]"
+                      name="BPR02" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR03]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR03]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR03]"
+                      name="BPR03" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR04]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR04]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR04]"
+                      name="BPR04" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR05]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR05]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR05]"
+                      name="BPR05" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR06]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR06]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR06]"
+                      name="BPR06" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR07]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR07]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR07]"
+                      name="BPR07" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR08]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR08]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR08]"
+                      name="BPR08" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR09]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR09]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR09]"
+                      name="BPR09" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR10]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR10]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR10]"
+                      name="BPR10" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR11]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR11]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR11]"
+                      name="BPR11" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR12]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR12]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR12]"
+                      name="BPR12" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR13]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR13]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR13]"
+                      name="BPR13" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR14]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR14]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR14]"
+                      name="BPR14" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR15]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR15]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR15]"
+                      name="BPR15" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR16]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR16]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[BPR16]"
+                      name="BPR16" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[ST_Id]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[ST_Id]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[ST_Id]"
+                      name="ST_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR01]"
+                      dataType="nText"
+                      name="BPR01" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR02]"
+                      dataType="nText"
+                      name="BPR02" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR03]"
+                      dataType="nText"
+                      name="BPR03" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR04]"
+                      dataType="nText"
+                      name="BPR04" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR05]"
+                      dataType="nText"
+                      name="BPR05" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR06]"
+                      dataType="nText"
+                      name="BPR06" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR07]"
+                      dataType="nText"
+                      name="BPR07" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR08]"
+                      dataType="nText"
+                      name="BPR08" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR09]"
+                      dataType="nText"
+                      name="BPR09" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR10]"
+                      dataType="nText"
+                      name="BPR10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR11]"
+                      dataType="nText"
+                      name="BPR11" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR12]"
+                      dataType="nText"
+                      name="BPR12" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR13]"
+                      dataType="nText"
+                      name="BPR13" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR14]"
+                      dataType="nText"
+                      name="BPR14" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR15]"
+                      dataType="nText"
+                      name="BPR15" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[BPR16]"
+                      dataType="nText"
+                      name="BPR16" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[BPR Error Output].ExternalColumns[ST_Id]"
+                      dataType="nText"
+                      name="ST_Id" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\XML Source.Outputs[TRN]"
+                  name="TRN">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">TRN</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN].Columns[TRN01]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[TRN].ExternalColumns[TRN01]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[TRN].Columns[TRN01]"
+                      name="TRN01"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN].Columns[TRN02]"
+                      dataType="ui4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[TRN].ExternalColumns[TRN02]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[TRN].Columns[TRN02]"
+                      name="TRN02"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN].Columns[TRN03]"
+                      dataType="ui4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[TRN].ExternalColumns[TRN03]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[TRN].Columns[TRN03]"
+                      name="TRN03"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN].Columns[ST_Id]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[TRN].ExternalColumns[ST_Id]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[TRN].Columns[ST_Id]"
+                      name="ST_Id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN].ExternalColumns[TRN01]"
+                      dataType="ui1"
+                      name="TRN01">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.Byte</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN].ExternalColumns[TRN02]"
+                      dataType="ui4"
+                      name="TRN02">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt32</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN].ExternalColumns[TRN03]"
+                      dataType="ui4"
+                      name="TRN03">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt32</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN].ExternalColumns[ST_Id]"
+                      dataType="ui8"
+                      name="ST_Id">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt64</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output]"
+                  isErrorOut="true"
+                  name="TRN Error Output">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">TRN</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].Columns[TRN01]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].ExternalColumns[TRN01]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].Columns[TRN01]"
+                      name="TRN01" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].Columns[TRN02]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].ExternalColumns[TRN02]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].Columns[TRN02]"
+                      name="TRN02" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].Columns[TRN03]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].ExternalColumns[TRN03]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].Columns[TRN03]"
+                      name="TRN03" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].Columns[ST_Id]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].ExternalColumns[ST_Id]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].Columns[ST_Id]"
+                      name="ST_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].ExternalColumns[TRN01]"
+                      dataType="nText"
+                      name="TRN01" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].ExternalColumns[TRN02]"
+                      dataType="nText"
+                      name="TRN02" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].ExternalColumns[TRN03]"
+                      dataType="nText"
+                      name="TRN03" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[TRN Error Output].ExternalColumns[ST_Id]"
+                      dataType="nText"
+                      name="ST_Id" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\XML Source.Outputs[REF]"
+                  name="REF">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">REF</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[REF].Columns[REF01]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[REF].ExternalColumns[REF01]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[REF].Columns[REF01]"
+                      name="REF01"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[REF].Columns[REF02]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[REF].ExternalColumns[REF02]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[REF].Columns[REF02]"
+                      name="REF02"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[REF].Columns[ST_Id]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[REF].ExternalColumns[ST_Id]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[REF].Columns[ST_Id]"
+                      name="ST_Id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[REF].ExternalColumns[REF01]"
+                      dataType="wstr"
+                      length="255"
+                      name="REF01">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[REF].ExternalColumns[REF02]"
+                      dataType="wstr"
+                      length="255"
+                      name="REF02">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[REF].ExternalColumns[ST_Id]"
+                      dataType="ui8"
+                      name="ST_Id">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt64</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output]"
+                  isErrorOut="true"
+                  name="REF Error Output">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">REF</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output].Columns[REF01]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output].ExternalColumns[REF01]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output].Columns[REF01]"
+                      name="REF01" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output].Columns[REF02]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output].ExternalColumns[REF02]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output].Columns[REF02]"
+                      name="REF02" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output].Columns[ST_Id]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output].ExternalColumns[ST_Id]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output].Columns[ST_Id]"
+                      name="ST_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output].ExternalColumns[REF01]"
+                      dataType="nText"
+                      name="REF01" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output].ExternalColumns[REF02]"
+                      dataType="nText"
+                      name="REF02" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[REF Error Output].ExternalColumns[ST_Id]"
+                      dataType="nText"
+                      name="ST_Id" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\XML Source.Outputs[DTM]"
+                  name="DTM">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">DTM</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[DTM].Columns[DTM01]"
+                      dataType="ui2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[DTM].ExternalColumns[DTM01]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[DTM].Columns[DTM01]"
+                      name="DTM01"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[DTM].Columns[DTM02]"
+                      dataType="ui4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[DTM].ExternalColumns[DTM02]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[DTM].Columns[DTM02]"
+                      name="DTM02"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[DTM].Columns[ST_Id]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[DTM].ExternalColumns[ST_Id]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[DTM].Columns[ST_Id]"
+                      name="ST_Id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[DTM].ExternalColumns[DTM01]"
+                      dataType="ui2"
+                      name="DTM01">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt16</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[DTM].ExternalColumns[DTM02]"
+                      dataType="ui4"
+                      name="DTM02">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt32</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[DTM].ExternalColumns[ST_Id]"
+                      dataType="ui8"
+                      name="ST_Id">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt64</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output]"
+                  isErrorOut="true"
+                  name="DTM Error Output">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">DTM</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output].Columns[DTM01]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output].ExternalColumns[DTM01]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output].Columns[DTM01]"
+                      name="DTM01" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output].Columns[DTM02]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output].ExternalColumns[DTM02]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output].Columns[DTM02]"
+                      name="DTM02" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output].Columns[ST_Id]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output].ExternalColumns[ST_Id]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output].Columns[ST_Id]"
+                      name="ST_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output].ExternalColumns[DTM01]"
+                      dataType="nText"
+                      name="DTM01" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output].ExternalColumns[DTM02]"
+                      dataType="nText"
+                      name="DTM02" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[DTM Error Output].ExternalColumns[ST_Id]"
+                      dataType="nText"
+                      name="ST_Id" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\XML Source.Outputs[ST]"
+                  name="ST">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">ST</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST].Columns[ST_Id]"
+                      dataType="ui8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[ST].ExternalColumns[ST_Id]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[ST].Columns[ST_Id]"
+                      name="ST_Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST].Columns[ST01]"
+                      dataType="ui2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[ST].ExternalColumns[ST01]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[ST].Columns[ST01]"
+                      name="ST01"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST].Columns[ST02]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[ST].ExternalColumns[ST02]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[ST].Columns[ST02]"
+                      name="ST02"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST].Columns[Id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[ST].ExternalColumns[Id]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[ST].Columns[Id]"
+                      name="Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST].Columns[ParentId]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[ST].ExternalColumns[ParentId]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[ST].Columns[ParentId]"
+                      name="ParentId"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST].ExternalColumns[ST_Id]"
+                      dataType="ui8"
+                      name="ST_Id">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt64</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST].ExternalColumns[ST01]"
+                      dataType="ui2"
+                      name="ST01">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.UInt16</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST].ExternalColumns[ST02]"
+                      dataType="ui1"
+                      name="ST02">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.Byte</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST].ExternalColumns[Id]"
+                      dataType="wstr"
+                      length="255"
+                      name="Id">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST].ExternalColumns[ParentId]"
+                      dataType="wstr"
+                      length="255"
+                      name="ParentId">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          name="CLRType">System.String</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output]"
+                  isErrorOut="true"
+                  name="ST Error Output">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Identifies the rowset associated with the output."
+                      name="RowsetID">ST</property>
+                  </properties>
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].Columns[ST_Id]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].ExternalColumns[ST_Id]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].Columns[ST_Id]"
+                      name="ST_Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].Columns[ST01]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].ExternalColumns[ST01]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].Columns[ST01]"
+                      name="ST01" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].Columns[ST02]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].ExternalColumns[ST02]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].Columns[ST02]"
+                      name="ST02" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].Columns[Id]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].ExternalColumns[Id]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].Columns[Id]"
+                      name="Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].Columns[ParentId]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].ExternalColumns[ParentId]"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].Columns[ParentId]"
+                      name="ParentId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].ExternalColumns[ST_Id]"
+                      dataType="nText"
+                      name="ST_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].ExternalColumns[ST01]"
+                      dataType="nText"
+                      name="ST01" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].ExternalColumns[ST02]"
+                      dataType="nText"
+                      name="ST02" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].ExternalColumns[Id]"
+                      dataType="nText"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\XML Source.Outputs[ST Error Output].ExternalColumns[ParentId]"
+                      dataType="nText"
+                      name="ParentId" />
+                  </externalMetadataColumns>
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task 1.Paths[BPR]"
+              endId="Package\Data Flow Task 1\Derived Column.Inputs[Derived Column Input]"
+              name="BPR"
+              startId="Package\Data Flow Task 1\XML Source.Outputs[BPR]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[DTM]"
+              endId="Package\Data Flow Task 1\Derived Column 1.Inputs[Derived Column Input]"
+              name="DTM"
+              startId="Package\Data Flow Task 1\XML Source.Outputs[DTM]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[REF]"
+              endId="Package\Data Flow Task 1\Derived Column 2.Inputs[Derived Column Input]"
+              name="REF"
+              startId="Package\Data Flow Task 1\XML Source.Outputs[REF]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[ST]"
+              endId="Package\Data Flow Task 1\Derived Column 3.Inputs[Derived Column Input]"
+              name="ST"
+              startId="Package\Data Flow Task 1\XML Source.Outputs[ST]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[TRN]"
+              endId="Package\Data Flow Task 1\Derived Column 4.Inputs[Derived Column Input]"
+              name="TRN"
+              startId="Package\Data Flow Task 1\XML Source.Outputs[TRN]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{D8FEA769-A79D-4880-8664-C8CC1712D985}"
+      DTS:From="Package\Data Flow Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Data Flow Task 1" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -1328,11 +2850,37 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151,42"
           Id="Package\Data Flow Task"
           TopLeft="96,49" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Data Flow Task 1"
+          TopLeft="86,133" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="168.75,91">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -1369,6 +2917,218 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Data Flow Task 1">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="134,42"
+          Id="Package\Data Flow Task 1\XML Source"
+          TopLeft="170,29" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Data Flow Task 1\Derived Column"
+          TopLeft="45,172" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Data Flow Task 1\Derived Column 1"
+          TopLeft="183,325" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Data Flow Task 1\Derived Column 2"
+          TopLeft="487,184" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Data Flow Task 1\Derived Column 3"
+          TopLeft="699,183" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[BPR]"
+          TopLeft="199.2,71">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-77.2,101"
+              Start="0,0"
+              End="-77.2,93.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.6569646569646" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.6569646569646"
+                    Point2="0,30.6569646569646"
+                    Point3="-4,30.6569646569646" />
+                  <mssgle:LineSegment
+                    End="-73.2,30.6569646569646" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-73.2,30.6569646569646"
+                    Point2="-77.2,30.6569646569646"
+                    Point3="-77.2,34.6569646569646" />
+                  <mssgle:LineSegment
+                    End="-77.2,93.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-56.98359375,35.6569646569646,36.7671875,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[DTM]"
+          TopLeft="216,71">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="48.5,254"
+              Start="0,0"
+              End="48.5,246.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,99.3982300884956" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,99.3982300884956"
+                    Point2="0,103.398230088496"
+                    Point3="4,103.398230088496" />
+                  <mssgle:LineSegment
+                    End="44.5,103.398230088496" />
+                  <mssgle:CubicBezierSegment
+                    Point1="44.5,103.398230088496"
+                    Point2="48.5,103.398230088496"
+                    Point3="48.5,107.398230088496" />
+                  <mssgle:LineSegment
+                    End="48.5,246.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="4.95611328125,108.398230088496,38.5877734375,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[REF]"
+          TopLeft="249.6,71">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="318.9,113"
+              Start="0,0"
+              End="318.9,105.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.6359143327842" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,46.6359143327842"
+                    Point2="0,50.6359143327842"
+                    Point3="4,50.6359143327842" />
+                  <mssgle:LineSegment
+                    End="314.9,50.6359143327842" />
+                  <mssgle:CubicBezierSegment
+                    Point1="314.9,50.6359143327842"
+                    Point2="318.9,50.6359143327842"
+                    Point3="318.9,54.6359143327842" />
+                  <mssgle:LineSegment
+                    End="318.9,105.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="141.4960546875,55.6359143327842,35.907890625,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[ST]"
+          TopLeft="274.8,71">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="505.7,112"
+              Start="0,0"
+              End="505.7,104.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.995841995842" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.995841995842"
+                    Point2="0,33.995841995842"
+                    Point3="4,33.995841995842" />
+                  <mssgle:LineSegment
+                    End="501.7,33.995841995842" />
+                  <mssgle:CubicBezierSegment
+                    Point1="501.7,33.995841995842"
+                    Point2="505.7,33.995841995842"
+                    Point3="505.7,37.995841995842" />
+                  <mssgle:LineSegment
+                    End="505.7,104.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="237.64263671875,38.995841995842,30.4147265625,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Data Flow Task 1\Derived Column 4"
+          TopLeft="897,175" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[TRN]"
+          TopLeft="279,71">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="699.5,104"
+              Start="0,0"
+              End="699.5,96.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.2608695652174" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.2608695652174"
+                    Point2="0,28.2608695652174"
+                    Point3="4,28.2608695652174" />
+                  <mssgle:LineSegment
+                    End="695.5,28.2608695652174" />
+                  <mssgle:CubicBezierSegment
+                    Point1="695.5,28.2608695652174"
+                    Point2="699.5,28.2608695652174"
+                    Point3="699.5,32.2608695652174" />
+                  <mssgle:LineSegment
+                    End="699.5,96.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="331.25625,33.2608695652174,36.9875,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
